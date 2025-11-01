@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background Colors */
+    --color-background: #0F172A; /* slate-900 */
+    --color-foreground: #F8FAFC; /* slate-50 */
+    --color-card: #1E293B; /* slate-800 */
+    --color-card-foreground: #F8FAFC; /* slate-50 */
+    --color-popover: #1E293B; /* slate-800 */
+    --color-popover-foreground: #F8FAFC; /* slate-50 */
+    
+    /* Border and Input Colors */
+    --color-border: #334155; /* slate-700 */
+    --color-input: #1E293B; /* slate-800 */
+    --color-ring: #0EA5E9; /* sky-500 */
+    
+    /* Muted Colors */
+    --color-muted: #334155; /* slate-700 */
+    --color-muted-foreground: #94A3B8; /* slate-400 */
+    
+    /* Primary Colors */
+    --color-primary: #0EA5E9; /* sky-500 */
+    --color-primary-foreground: #F8FAFC; /* slate-50 */
+    
+    /* Secondary Colors */
+    --color-secondary: #64748B; /* slate-500 */
+    --color-secondary-foreground: #F8FAFC; /* slate-50 */
+    
+    /* Accent Colors */
+    --color-accent: #10B981; /* emerald-500 */
+    --color-accent-foreground: #F8FAFC; /* slate-50 */
+    
+    /* State Colors */
+    --color-destructive: #EF4444; /* red-500 */
+    --color-destructive-foreground: #F8FAFC; /* slate-50 */
+    --color-success: #22C55E; /* green-500 */
+    --color-success-foreground: #F8FAFC; /* slate-50 */
+    --color-warning: #F59E0B; /* amber-500 */
+    --color-warning-foreground: #F8FAFC; /* slate-50 */
+    --color-error: #EF4444; /* red-500 */
+    --color-error-foreground: #F8FAFC; /* slate-50 */
+    
+    /* Custom Brand Colors */
+    --color-brand-primary: #0A0A0B; /* custom-black */
+    --color-brand-secondary: #1E1E20; /* custom-dark-gray */
+    --color-conversion-accent: #00D9FF; /* custom-cyan */
+    --color-trust-builder: #4ADE80; /* custom-green */
+    --color-background-canvas: #0F0F11; /* custom-dark */
+    --color-text-primary: #FFFFFF; /* white */
+    --color-text-secondary: #A1A1AA; /* custom-gray */
+    --color-cta: #FF6B35; /* custom-orange */
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .text-brand-primary {
+    color: var(--color-brand-primary);
+  }
+  
+  .text-brand-secondary {
+    color: var(--color-brand-secondary);
+  }
+  
+  .text-conversion-accent {
+    color: var(--color-conversion-accent);
+  }
+  
+  .text-trust-builder {
+    color: var(--color-trust-builder);
+  }
+  
+  .text-cta {
+    color: var(--color-cta);
+  }
+  
+  .bg-brand-primary {
+    background-color: var(--color-brand-primary);
+  }
+  
+  .bg-brand-secondary {
+    background-color: var(--color-brand-secondary);
+  }
+  
+  .bg-conversion-accent {
+    background-color: var(--color-conversion-accent);
+  }
+  
+  .bg-trust-builder {
+    background-color: var(--color-trust-builder);
+  }
+  
+  .bg-background-canvas {
+    background-color: var(--color-background-canvas);
+  }
+  
+  .bg-cta {
+    background-color: var(--color-cta);
+  }
+  
+  .border-conversion-accent {
+    border-color: var(--color-conversion-accent);
+  }
+  
+  .shadow-brand {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .shadow-brand-strong {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transition-brand {
+    transition: all 0.3s ease-out;
+  }
+  
+  .glow-accent {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+  }
+  
+  .glow-cta {
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+  }
+}
