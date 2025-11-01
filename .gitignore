@@ -34,3 +34,6 @@ coverage/
 
 # Optional: lockfiles for other tools
 yarn.lock
+
+#Python venv
+.venv/
