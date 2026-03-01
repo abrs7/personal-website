@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import Header from '../../components/ui/Header';
 import Icon from '../../components/AppIcon';
 import Button from '../../components/ui/Button';
+import { downloadResume } from '../../utils/api';
 import ExperienceTimeline from './components/ExperienceTimeline';
 import ExperienceStats from './components/ExperienceStats';
 import ExperienceFilters from './components/ExperienceFilters';
@@ -47,7 +48,7 @@ const Experience = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Professional Experience - Abraham Asrat | Senior Backend Engineer</title>
-        <meta name="description" content="Explore Abraham Asrat's professional journey as a Senior Backend Engineer with 5+ years of experience in fintech, serving 75,000+ users and processing 3M+ ETB daily transactions." />
+        <meta name="description" content="Explore Abraham Asrat's professional journey as a Senior Backend Engineer with 4+ years of experience in fintech, serving 2,000,000+ users and processing 3M+ ETB daily transactions." />
         <meta name="keywords" content="Abraham Asrat, Backend Engineer, Python Django, Fintech Experience, Software Developer, Global Atlantic, ArifPay" />
       </Helmet>
       <Header />
@@ -78,6 +79,7 @@ const Experience = () => {
                 iconName="Download"
                 iconPosition="left"
                 className="bg-primary hover:bg-primary/90"
+                onClick={downloadResume}
               >
                 Download Resume
               </Button>

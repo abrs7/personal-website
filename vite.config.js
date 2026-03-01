@@ -7,17 +7,13 @@ import tagger from "@dhiwise/component-tagger";
 export default defineConfig({
   // This changes the out put dir from dist to build
   // comment this out if that isn't relevant for your project
+  base: "/personal-website/",
   build: {
     outDir: "build",
     chunkSizeWarningLimit: 2000,
   },
   plugins: [tsconfigPaths(), react(), tagger()],
-//   server: {
-//     port: "4028",
-//     host: "0.0.0.0",
-//     strictPort: true,
-//     allowedHosts: ['.amazonaws.com', '.builtwithrocket.new']
-//   }
+
   server: {
   port: "3000",  // Change to any available port
   host: "0.0.0.0",
@@ -25,4 +21,5 @@ export default defineConfig({
   allowedHosts: ['.amazonaws.com', '.builtwithrocket.new']
 }
 });
+
 

@@ -6,11 +6,11 @@ const EducationSection = () => {
   const educationData = [
   {
     id: 1,
-    degree: "Bachelor of Science in Computer Science",
-    institution: "Addis Ababa University",
+    degree: "Bachelor Degree in Computer Engineering",
+    institution: "Debre Markos University",
     location: "Addis Ababa, Ethiopia",
-    period: "2016 - 2020",
-    gpa: "3.8/4.0",
+    period: "2018 - 2022",
+    gpa: "3.0/4.0",
     description: "Focused on software engineering, algorithms, and database systems. Graduated Magna Cum Laude with specialization in backend systems and distributed computing.",
     coursework: [
     "Data Structures & Algorithms",
@@ -26,8 +26,8 @@ const EducationSection = () => {
     "Published research paper on microservices architecture",
     "President of Computer Science Student Association"],
 
-    logo: "https://images.unsplash.com/photo-1588072351557-1457a8ac6fcd",
-    logoAlt: "Addis Ababa University emblem featuring traditional Ethiopian design elements in blue and gold colors"
+    logo: "https://res.cloudinary.com/dril6qcv0/image/upload/v1762088650/DMU_qewu5n.png",
+    logoAlt: "Debre Markos University emblem featuring traditional Ethiopian design elements in blue and gold colors"
   }];
 
 

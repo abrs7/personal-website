@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
+import { downloadResume } from '../../../utils/api';
 
 const CallToAction = () => {
   const contactOptions = [
@@ -118,10 +119,9 @@ const CallToAction = () => {
                   </div>
                 </Link>
               ) : (
-                <a
-                  href={option?.href}
-                  download
-                  className="block bg-card border border-border rounded-xl p-6 shadow-brand hover:shadow-brand-strong transition-brand h-full"
+                <button
+                  onClick={downloadResume}
+                  className="block w-full text-left bg-card border border-border rounded-xl p-6 shadow-brand hover:shadow-brand-strong transition-brand h-full"
                 >
                   <div className={`inline-flex items-center justify-center w-12 h-12 bg-${option?.color}/10 rounded-lg mb-4 group-hover:scale-110 transition-brand`}>
                     <Icon name={option?.icon} size={24} className={`text-${option?.color}`} />
@@ -136,7 +136,7 @@ const CallToAction = () => {
                     <span className="group-hover:mr-2 transition-all">Download</span>
                     <Icon name="ArrowRight" size={16} className="opacity-0 group-hover:opacity-100 transition-all" />
                   </div>
-                </a>
+                </button>
               )}
             </div>
           ))}

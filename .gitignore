@@ -2,7 +2,6 @@
 node_modules/
 npm-debug.log*
 yarn-error.log*
-package-lock.json
 pnpm-lock.yaml
 
 # Build output
@@ -32,8 +31,14 @@ coverage/
 *.pem
 *.key
 
-# Optional: lockfiles for other tools
-yarn.lock
+
 
 #Python venv
-.venv/
+.venv/*
+venv/*
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv

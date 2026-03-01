@@ -8,27 +8,27 @@ const FeaturedProjectsSection = () => {
   const featuredProjects = [
   {
     id: 1,
-    title: 'ArifPay Payment Gateway',
-    description: 'Comprehensive payment processing system handling 3M+ ETB daily transactions with advanced security and real-time monitoring.',
-    image: "https://images.unsplash.com/photo-1726065235209-1c99ba825cc5",
+    title: 'Safaricom M-Pesa Fintech',
+    description: 'Empowering Ethiopia’s leading mobile money platform with 2M+ active users and daily transactions exceeding 2B ETB, featuring an advanced back-office system for seamless mini-app and transaction management.',
+    image: "https://res.cloudinary.com/dril6qcv0/image/upload/v1762084656/Mpesa_a8hahk.jpg",
     imageAlt: 'Modern payment terminal with contactless card reader on white desk in bright office setting',
-    technologies: ['Python', 'Django', 'PostgreSQL', 'Redis', 'AWS'],
+    technologies: ['Java', 'SpringBoot', 'PostgreSQL', 'Redis', 'Kafka', 'Docker', 'Jenkins'],
     metrics: {
-      users: '75K+',
-      transactions: '3M+ ETB',
+      users: '2M+',
+      transactions: '2B+ ETB',
       uptime: '99.9%'
     },
     category: 'Fintech',
     status: 'Production',
-    link: '/projects#arifpay'
+    link: '/projects#mpesa'
   },
   {
     id: 2,
     title: 'Workflow Automation System',
-    description: 'Intelligent automation platform that reduced manual interventions by 40% through smart process optimization and ML-driven insights.',
-    image: "https://images.unsplash.com/photo-1621926442743-11916d40c022",
+    description: 'Developed Control-M automation solutions streamlining business workflows and reducing operational costs by over 65% compared to previous methods.                                                             ',
+    image: "https://res.cloudinary.com/dril6qcv0/image/upload/v1762084656/GAFG_vzf2vi.png",
     imageAlt: 'Robotic process automation dashboard showing workflow diagrams and performance metrics on multiple monitors',
-    technologies: ['Node.js', 'React', 'MongoDB', 'Docker', 'Jenkins'],
+    technologies: ['Python', 'AWS', 'MongoDB', 'Docker', 'Terraform'],
     metrics: {
       efficiency: '40%',
       processes: '25+',
@@ -41,7 +41,7 @@ const FeaturedProjectsSection = () => {
   {
     id: 3,
     title: 'Microservices Architecture',
-    description: 'Scalable microservices ecosystem supporting multiple applications with service mesh, API gateway, and comprehensive monitoring.',
+    description: 'Scalable microservices ecosystem supporting multiple applications with service mesh, API gateway, and comprehensive monitoring.                                                                                ',
     image: "https://images.unsplash.com/photo-1644088379091-d574269d422f",
     imageAlt: 'Network diagram visualization showing interconnected nodes and data flow patterns on dark background',
     technologies: ['Python', 'FastAPI', 'Kubernetes', 'PostgreSQL', 'Prometheus'],

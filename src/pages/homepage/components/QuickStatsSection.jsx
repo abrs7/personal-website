@@ -10,10 +10,10 @@ const QuickStatsSection = () => {
   });
 
   const finalValues = {
-    users: 75000,
-    transactions: 3000000,
+    users: 2000000,
+    transactions: 2000000000,
     optimization: 40,
-    projects: 15
+    projects: 20
   };
 
   useEffect(() => {
@@ -83,10 +83,10 @@ const QuickStatsSection = () => {
 
   const formatValue = (value, format) => {
     if (format === 'currency') {
-      return (value / 1000000)?.toFixed(1) + 'M';
+      return (value / 1000000000)?.toFixed(1) + 'B';
     }
     if (value >= 1000) {
-      return (value / 1000)?.toFixed(0) + 'K';
+      return (value / 1000000)?.toFixed(0) + 'M';
     }
     return value?.toString();
   };

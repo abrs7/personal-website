@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import Header from '../../components/ui/Header';
 import Icon from '../../components/AppIcon';
 import Button from '../../components/ui/Button';
+import { downloadResume } from '../../utils/api';
 import SkillCard from './components/SkillCard';
 import SkillModal from './components/SkillModal';
 import SkillFilter from './components/SkillFilter';
@@ -378,6 +379,7 @@ const Skills = () => {
                 iconName="Download"
                 iconPosition="left"
                 className="bg-cta hover:bg-cta/90 text-white"
+                onClick={downloadResume}
               >
                 Download Resume
               </Button>

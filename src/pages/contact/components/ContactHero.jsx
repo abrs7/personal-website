@@ -1,6 +1,6 @@
 import React from 'react';
-
 import Button from '../../../components/ui/Button';
+import { downloadResume } from '../../../utils/api';
 
 const ContactHero = () => {
   return (
@@ -61,6 +61,7 @@ const ContactHero = () => {
               size="lg"
               iconName="Download"
               iconPosition="left"
+              onClick={downloadResume}
             >
               Download Resume
             </Button>

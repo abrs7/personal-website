@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from '../../../components/AppImage';
 import Button from '../../../components/ui/Button';
+import { downloadResume } from '../../../utils/api';
 
 const HeroSection = () => {
   return (
@@ -37,8 +38,9 @@ const HeroSection = () => {
                 size="lg"
                 iconName="Download"
                 iconPosition="left"
-                className="bg-cta hover:bg-cta/90 text-white glow-cta">
-
+                className="bg-cta hover:bg-cta/90 text-white glow-cta"
+                onClick={downloadResume}
+              >
                 Download Resume
               </Button>
               <Button
@@ -55,11 +57,11 @@ const HeroSection = () => {
             {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">75K+</div>
+                <div className="text-2xl font-bold text-primary">1M+</div>
                 <div className="text-sm text-muted-foreground">Users Served</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-accent">3M+ ETB</div>
+                <div className="text-2xl font-bold text-accent">2B+ ETB</div>
                 <div className="text-sm text-muted-foreground">Daily Transactions</div>
               </div>
               <div className="text-center">
@@ -75,7 +77,7 @@ const HeroSection = () => {
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-1">
                 <div className="w-full h-full rounded-2xl overflow-hidden bg-card">
                   <Image
-                    src="https://images.unsplash.com/photo-1734456611474-13245d164868"
+                    src="https://res.cloudinary.com/dril6qcv0/image/upload/v1762085838/Gemini_Generated_Image_815dsr815dsr815d_mkearc.png"
                     alt="Professional headshot of Abraham Asrat, a confident software engineer with short dark hair wearing a navy blue suit, smiling at camera against modern office background"
                     className="w-full h-full object-cover" />
 

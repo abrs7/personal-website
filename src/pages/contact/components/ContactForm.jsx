@@ -3,6 +3,7 @@ import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
 import Input from '../../../components/ui/Input';
 import Select from '../../../components/ui/Select';
+import { sendContactEmail } from '../../../utils/api';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -64,11 +65,12 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e?.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
     
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      const response = await sendContactEmail(formData);
       
+      if (response.success) {
       setSubmitStatus('success');
       setFormData({
         name: '',
@@ -79,7 +81,11 @@ const ContactForm = () => {
         timeline: '',
         message: ''
       });
+      } else {
+        setSubmitStatus('error');
+      }
     } catch (error) {
+      console.error('Error submitting contact form:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

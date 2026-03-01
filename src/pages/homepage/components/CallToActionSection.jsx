@@ -35,8 +35,8 @@ const CallToActionSection = () => {
   ];
 
   const achievements = [
-    'Backend systems serving 75,000+ users',
-    'Payment processing handling 3M+ ETB daily',
+    'Backend systems serving 2,000,000+ users',
+    'Payment processing handling 2B+ ETB daily',
     '40% reduction in manual processes',
     'Microservices architecture expertise',
     'Full-stack development capabilities'
@@ -163,11 +163,11 @@ const CallToActionSection = () => {
         <div className="mt-16 pt-12 border-t border-border">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-2xl font-bold text-conversion-accent">5+</div>
+              <div className="text-2xl font-bold text-conversion-accent">4+</div>
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-trust-builder">15+</div>
+              <div className="text-2xl font-bold text-trust-builder">20+</div>
               <div className="text-sm text-muted-foreground">Projects Delivered</div>
             </div>
             <div>

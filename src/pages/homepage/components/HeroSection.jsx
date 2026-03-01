@@ -32,7 +32,7 @@ const automateProcess = async () => {
       code: `-- Database Optimization
 SELECT * FROM users 
 WHERE active = true
--- Serving 75,000+ users`,
+-- Serving 2,000,000+ users`,
       description: 'Database Management'
     }
   ];
@@ -110,11 +110,11 @@ WHERE active = true
             {/* Key Metrics */}
             <div className="grid grid-cols-3 gap-6 mb-8">
               <div className="text-center">
-                <div className="text-2xl font-bold text-conversion-accent">75K+</div>
+                <div className="text-2xl font-bold text-conversion-accent">2M+</div>
                 <div className="text-sm text-muted-foreground">Users Served</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-trust-builder">3M+</div>
+                <div className="text-2xl font-bold text-trust-builder">2B+</div>
                 <div className="text-sm text-muted-foreground">ETB Daily Transactions</div>
               </div>
               <div className="text-center">

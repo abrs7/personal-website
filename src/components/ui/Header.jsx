@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Icon from '../AppIcon';
 import Button from './Button';
+import { downloadResume } from '../../utils/api';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const navigationItems = [
     { name: 'Home', path: '/homepage', icon: 'Home' },
@@ -60,6 +62,7 @@ const Header = () => {
               iconName="Download"
               iconPosition="left"
               className="text-sm"
+              onClick={downloadResume}
             >
               Resume
             </Button>
@@ -69,6 +72,7 @@ const Header = () => {
               iconName="Mail"
               iconPosition="left"
               className="bg-cta hover:bg-cta/90 text-white"
+              onClick={() => navigate('/contact')}
             >
               Contact
             </Button>
@@ -111,6 +115,7 @@ const Header = () => {
                   iconName="Download"
                   iconPosition="left"
                   fullWidth
+                  onClick={downloadResume}
                 >
                   Download Resume
                 </Button>
@@ -121,6 +126,10 @@ const Header = () => {
                   iconPosition="left"
                   fullWidth
                   className="bg-cta hover:bg-cta/90 text-white"
+                  onClick={() => {
+                    navigate('/contact');
+                    setIsMobileMenuOpen(false);
+                  }}
                 >
                   Get In Touch
                 </Button>
